@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 2015 Genel Seçim Sonuçları Isı Haritası </title>
+    <meta name="description" content="2015 Genel Seçim Sonuçları Isı Haritası. YSK'dan alınan sandık bazındaki veriler ile hesaplanmistir.">
+    
+    <!--leaflet-->
+    <link rel="stylesheet" href="js/leaflet.css" />
+    <script src="js/leaflet.js"></script>
+    <!-- heatmap -->
+    <script src="js/leaflet-heat.js"></script>
+
+    <style type="text/css">
+        #map {
+            height: 100%;
+        }
+
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+
+            .info h4 {
+                margin: 0 0 5px;
+                color: #777;
+            }
+            .info span {
+                font-size: 85%;
+                margin: 0 0 5px;
+                color: #777;
+            }
+
+        .legend {
+            text-align: left;
+            line-height: 18px;
+            color: #555;
+        }
+
+            .legend i {
+                width: 18px;
+                height: 18px;
+                float: left;
+                margin-right: 8px;
+                opacity: 0.7;
+            }
+    </style>
+</head>
+
+<body>
+    
+    <div class="info">
+        <center>
+            <h4>2015 (25. dönem) Genel Seçim Sonuçları Isı Haritası</h4>
+            <span>
+                <a href="https://github.com/eoner/YSKSecimSonuclari">Sandık bazındaki veriler ile hesaplanmıştır.</a>
+            </span>
+        </center>
+    </div>
+    <div id="map"></div>
+    <script src="js/secim2015heat.js"></script>
+</body>
+</html>
